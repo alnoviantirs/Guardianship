@@ -81,7 +81,7 @@ export let isiTabelRuangan = `
     <th class="whitespace-nowrap px-4 bg-white text-left">
         <div class="flex items-center -m-2">
             <div class="w-auto p-2">
-                <p class="text-xs font-semibold text-coolGray-800">#LOKASIRUANGAN#</p>
+                <p class="text-center text-xs font-semibold text-coolGray-800">#LOKASIRUANGAN#</p>
             </div>
         </div>
     </th>
