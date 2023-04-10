@@ -80,7 +80,7 @@ export let isiTabelRuangan = `
 <tr class="h-18 border-b border-coolGray-100">
     <th class="whitespace-nowrap px-4 bg-white text-left">
         <div class="text-center flex items-center -m-2">
-            <div class="w-auto p-2">
+            <div class="text-center w-auto p-2">
                 <p class="text-center text-xs font-semibold text-coolGray-800">#LOKASIRUANGAN#</p>
             </div>
         </div>
