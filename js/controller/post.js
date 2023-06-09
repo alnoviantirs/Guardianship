@@ -16,12 +16,12 @@ function pushData() {
     },
     lokasi: getValue("lokasi"),
     wali_dosen: {
-      nama: getValue("nama"),
+      nama: getValue("walidosen"),
       jabatan: getValue("jabatan"),
     },
     biodata: {
       nama: getValue("nama"),
-      phone_number: getValue("phone_number"),
+      phone_number: getValue("nohp"),
       jurusan: getValue("jurusan"),
     },
   };
