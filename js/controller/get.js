@@ -11,7 +11,7 @@ import {
   isiTabelWaktu,
   isiTabelRuangan,
 } from "../temp/table.js";
-export function isiTabel(results) {
+export function isiTablePresensi(results) {
   results.forEach(isiRow);
 }
 export function isiTable_Mahasiswa(results) {
