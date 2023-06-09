@@ -25,7 +25,8 @@ function pushData() {
       jurusan: getValue("jurusan"),
     },
   };
+
+  postData(urlPOST, data, AmbilResponse);
 }
-postData(urlPOST, data, AmbilResponse);
 
 onClick("button", pushData);
