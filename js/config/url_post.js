@@ -1,4 +1,4 @@
-export let urlPOST = "https://alnovianti.herokuapp.com/insert/";
+export let urlPOST = "https://alnovianti.herokuapp.com/insert";
 
 export function AmbilResponse(result) {
   console.log(result); //menampilkan response API pada console
