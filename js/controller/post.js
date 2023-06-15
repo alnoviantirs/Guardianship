@@ -6,23 +6,21 @@ import {
 import { urlPOST, AmbilResponse } from "../config/url_post.js";
 
 function pushData() {
-  console.log(document.getElementById("jam").value);
-  console.log(document.getElementById("hari").value);
   let data = {
     time: {
-      jam: document.getElementById("jam").value,
-      hari: document.getElementById("hari").value,
-      tanggal: document.getElementById("tanggal").value,
+      jam: getValue("jam"),
+      hari: getValue("hari"),
+      tanggal: getValue("tanggal"),
     },
-    lokasi: document.getElementById("lokasi").value,
+    lokasi: getValue("lokasi"),
     wali_dosen: {
-      nama: document.getElementById("namadosen").value,
-      jabatan: document.getElementById("jabatan").value,
+      nama: getValue("namadosen"),
+      jabatan: getValue("jabatan"),
     },
     biodata: {
-      nama: document.getElementById("nama").value,
-      phone_number: document.getElementById("phone_number").value,
-      jurusan: document.getElementById("jurusan").value,
+      nama: getValue("nama"),
+      phone_number: getValue("phone_number"),
+      jurusan: getValue("jurusan"),
     },
   };
 
