@@ -6,8 +6,8 @@ import {
 import { urlPOST, AmbilResponse } from "../config/url_post.js";
 
 function pushData() {
-  var biodata = getValue("biodata");
-
+  console.log(document.getElementById("jam"));
+  console.log(document.getElementById("hari"));
   let data = {
     time: {
       jam: getValue("jam"),
@@ -16,7 +16,7 @@ function pushData() {
     },
     lokasi: getValue("lokasi"),
     wali_dosen: {
-      nama: getValue("nama"),
+      nama: getValue("namadosen"),
       jabatan: getValue("jabatan"),
     },
     biodata: {
