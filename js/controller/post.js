@@ -14,7 +14,7 @@ function pushData() {
     },
     lokasi: getValue("lokasi"),
     wali_dosen: {
-      nama: getValue("namadosen"),
+      nama: getValue("nama"),
       jabatan: getValue("jabatan"),
     },
     biodata: {
