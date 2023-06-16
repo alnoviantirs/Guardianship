@@ -13,7 +13,7 @@ function pushData() {
       tanggal: getValue("tanggal"),
     },
     lokasi: getValue("lokasi"),
-    wali_dosen: {
+    walidosen: {
       nama: getValue("nama"),
       jabatan: getValue("jabatan"),
     },
