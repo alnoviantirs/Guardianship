@@ -35,6 +35,7 @@ function isiRow(value) {
     .replace("#NOHP#", value.biodata.phone_number)
     .replace("#JURUSAN#", value.biodata.jurusan)
     .replace("#NAMAWALDOS#", value.walidosen.nama)
+    .replace("#JABATAN#", value.walidosen.jabatan)
     .replace("#TANGGAL#", value.time.tanggal)
     .replace("#HARI#", value.time.hari)
     .replace("#JAM#", value.time.jam)
