@@ -46,44 +46,44 @@ function isiRow(value) {
     .replace(/#WARNALOGO#/g, getRandomColorName());
   addInner("iniTabel", content);
 }
-function isiRowMahasiswa(value) {
-  let content = isiTabelMahasiswa
-    .replace("#NAMA#", value.nama)
-    .replace("#NOHP#", value.phone_number)
-    .replace("#JURUSAN#", value.jurusan)
-    .replace("#WARNA#", getRandomColor())
-    .replace(/#WARNALOGO#/g, getRandomColorName());
-  addInner("iniTabelMahasiswa", content);
-}
-function isiRowDosen(value) {
-  let content = isiTabelDosen
-    .replace("#NAMA#", value.nama)
-    .replace("#JABATAN#", value.jabatan)
-    .replace("#WARNA#", getRandomColor())
-    .replace(/#WARNALOGO#/g, getRandomColorName());
-  addInner("iniTabelDosen", content);
-}
-function isiRowLocation(value) {
-  let content = isiTabelLocation
-    .replace("#NAMALOKASI#", value.nama_lokasi)
-    .replace("#ALAMAT#", value.alamat)
-    .replace("#WARNA#", getRandomColor())
-    .replace(/#WARNALOGO#/g, getRandomColorName());
-  addInner("iniTabelLocation", content);
-}
-function isiRowWaktu(value) {
-  let content = isiTabelWaktu
-    .replace("#JAM#", value.jam)
-    .replace("#HARI#", value.hari)
-    .replace("#TANGGAL#", value.tanggal)
-    .replace("#WARNA#", getRandomColor())
-    .replace(/#WARNALOGO#/g, getRandomColorName());
-  addInner("iniTabelWaktu", content);
-}
-function isiRowRuangan(value) {
-  let content = isiTabelRuangan
-    .replace("#LOKASIRUANGAN#", value.lokasi_ruangan)
-    .replace("#WARNA#", getRandomColor())
-    .replace(/#WARNALOGO#/g, getRandomColorName());
-  addInner("iniTabelRuangan", content);
-}
+// function isiRowMahasiswa(value) {
+//   let content = isiTabelMahasiswa
+//     .replace("#NAMA#", value.nama)
+//     .replace("#NOHP#", value.phone_number)
+//     .replace("#JURUSAN#", value.jurusan)
+//     .replace("#WARNA#", getRandomColor())
+//     .replace(/#WARNALOGO#/g, getRandomColorName());
+//   addInner("iniTabelMahasiswa", content);
+// }
+// function isiRowDosen(value) {
+//   let content = isiTabelDosen
+//     .replace("#NAMA#", value.nama)
+//     .replace("#JABATAN#", value.jabatan)
+//     .replace("#WARNA#", getRandomColor())
+//     .replace(/#WARNALOGO#/g, getRandomColorName());
+//   addInner("iniTabelDosen", content);
+// }
+// function isiRowLocation(value) {
+//   let content = isiTabelLocation
+//     .replace("#NAMALOKASI#", value.nama_lokasi)
+//     .replace("#ALAMAT#", value.alamat)
+//     .replace("#WARNA#", getRandomColor())
+//     .replace(/#WARNALOGO#/g, getRandomColorName());
+//   addInner("iniTabelLocation", content);
+// }
+// function isiRowWaktu(value) {
+//   let content = isiTabelWaktu
+//     .replace("#JAM#", value.jam)
+//     .replace("#HARI#", value.hari)
+//     .replace("#TANGGAL#", value.tanggal)
+//     .replace("#WARNA#", getRandomColor())
+//     .replace(/#WARNALOGO#/g, getRandomColorName());
+//   addInner("iniTabelWaktu", content);
+// }
+// function isiRowRuangan(value) {
+//   let content = isiTabelRuangan
+//     .replace("#LOKASIRUANGAN#", value.lokasi_ruangan)
+//     .replace("#WARNA#", getRandomColor())
+//     .replace(/#WARNALOGO#/g, getRandomColorName());
+//   addInner("iniTabelRuangan", content);
+// }
