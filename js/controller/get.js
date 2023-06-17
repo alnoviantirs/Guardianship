@@ -5,30 +5,30 @@ import {
 } from "https://bukulapak.github.io/image/process.js";
 import {
   isiTabel,
-  isiTabelMahasiswa,
-  isiTabelDosen,
-  isiTabelLocation,
-  isiTabelWaktu,
-  isiTabelRuangan,
+  // isiTabelMahasiswa,
+  // isiTabelDosen,
+  // isiTabelLocation,
+  // isiTabelWaktu,
+  // isiTabelRuangan,
 } from "../temp/table.js";
 export function isiTablePresensi(results) {
   results.forEach(isiRow);
 }
-export function isiTable_Mahasiswa(results) {
-  results.forEach(isiRowMahasiswa);
-}
-export function isiTabel_Dosen(results) {
-  results.forEach(isiRowDosen);
-}
-export function isiTabel_Location(results) {
-  results.forEach(isiRowLocation);
-}
-export function isiTabel_Waktu(results) {
-  results.forEach(isiRowWaktu);
-}
-export function isiTabel_Ruangan(results) {
-  results.forEach(isiRowRuangan);
-}
+// export function isiTable_Mahasiswa(results) {
+//   results.forEach(isiRowMahasiswa);
+// }
+// export function isiTabel_Dosen(results) {
+//   results.forEach(isiRowDosen);
+// }
+// export function isiTabel_Location(results) {
+//   results.forEach(isiRowLocation);
+// }
+// export function isiTabel_Waktu(results) {
+//   results.forEach(isiRowWaktu);
+// }
+// export function isiTabel_Ruangan(results) {
+//   results.forEach(isiRowRuangan);
+// }
 function isiRow(value) {
   let content = isiTabel
     .replace("#NAMA#", value.biodata.nama)
