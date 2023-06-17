@@ -29,7 +29,18 @@ export function isiTabel_Waktu(results) {
 export function isiTabel_Ruangan(results) {
   results.forEach(isiRowRuangan);
 }
+
+var MyvarPerwalian = {};
+export function isiTablePresensi(results3) {
+  results3.reverse();
+  MyvarPerwalian.length = results3.length;
+  results3.forEach(isiRow);
+  console.log(results3);
+}
+
 function isiRow(value) {
+  document.getElementById("jmlperwalian").innerHTML =
+    "" + MyvarPerwalian.length + " Data";
   let content = isiTabel
     .replace("#NAMA#", value.biodata.nama)
     .replace("#NOHP#", value.biodata.phone_number)
