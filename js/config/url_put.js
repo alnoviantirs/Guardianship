@@ -1,7 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const perwalianId = urlParams.get("perwalianId");
 
-export let urlPUT = "https://alnovianti.herokuapp.com/update/" + perwalianId;
+export let urlPUT = "https://alnovianti.herokuapp.com/update" + perwalianId;
 
 export function AmbilResponse(result) {
   console.log(result); //menampilkan respond API pada console
