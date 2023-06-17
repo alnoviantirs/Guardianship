@@ -3,7 +3,7 @@ export function isiData(results) {
     { id: "nama", path: "biodata.nama" },
     { id: "phone_number", path: "biodata.phone_number" },
     { id: "jurusan", path: "biodata.jurusan" },
-    { id: "namawaldos", path: "walidosen.nama" },
+    { id: "nama", path: "walidosen.nama" },
     { id: "jabatan", path: "walidosen.jabatan" },
     { id: "tanggal", path: "time.tanggal" },
     { id: "hari", path: "time.hari" },
