@@ -12,4 +12,4 @@ function pushData() {
   postData(urlPOSTRuangan, data, AmbilResponse);
 }
 
-onClick("btn_ruangan", pushData);
+onClick("button", pushData);

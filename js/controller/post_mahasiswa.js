@@ -14,4 +14,4 @@ function pushData() {
   postData(urlPOSTMahasiswa, data, AmbilResponse);
 }
 
-onClick("btn_mahasiswa", pushData);
+onClick("button", pushData);
