@@ -24,7 +24,22 @@ function pushData() {
     },
   };
 
-  postData(urlPOST, data, AmbilResponse);
+  let datadosen = {
+    nama: getValue("nama"),
+    jabatan: getValue("jabatan"),
+  };
+
+  let dataruangan = {
+    lokasi_ruangan: getValue("lokasi_ruangan"),
+  };
+
+  let datamahasiswa = {
+    nama: getValue("nama"),
+    phone_number: getValue("phone_number"),
+    jurusan: getValue("jurusan"),
+  };
+
+  postData(urlPOST, data, datadosen, datamahasiswa, dataruangan, AmbilResponse);
 }
 
 onClick("button", pushData);
