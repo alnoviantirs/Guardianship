@@ -2,6 +2,9 @@ import { postData } from "https://bukulapak.github.io/api/process.js";
 import {
   onClick,
   getValue,
+  getValueDosen,
+  getValueMahasiswa,
+  getValueRuangan,
 } from "https://bukulapak.github.io/element/process.js";
 import {
   urlPOST,
@@ -39,8 +42,8 @@ onClick("button", pushData);
 
 function pushDatadosen() {
   let datadosen = {
-    nama: getValue("nama"),
-    jabatan: getValue("jabatan"),
+    nama: getValueDosen("nama"),
+    jabatan: getValueDosen("jabatan"),
   };
   postData(urlPOSTDosen, datadosen, AmbilResponseDosen);
 }
@@ -49,9 +52,9 @@ onClick("button", pushDatadosen);
 
 function pushDatamahasiswa() {
   let datamahasiswa = {
-    nama: getValue("nama"),
-    phone_number: getValue("phone_number"),
-    jurusan: getValue("jurusan"),
+    nama: getValueMahasiswa("nama"),
+    phone_number: getValueMahasiswa("phone_number"),
+    jurusan: getValueMahasiswa("jurusan"),
   };
   postData(urlPOSTMahasiswa, datamahasiswa, AmbilResponseMahasiswa);
 }
@@ -60,7 +63,7 @@ onClick("button", pushDatamahasiswa);
 
 function pushDataruangan() {
   let dataruangan = {
-    lokasi_ruangan: getValue("lokasi_ruangan"),
+    lokasi_ruangan: getValueRuangan("lokasi_ruangan"),
   };
   postData(urlPOSTRuangan, dataruangan, AmbilResponseRuangan);
 }
