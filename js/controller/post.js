@@ -2,9 +2,6 @@ import { postData } from "https://bukulapak.github.io/api/process.js";
 import {
   onClick,
   getValue,
-  getValueDosen,
-  getValueMahasiswa,
-  getValueRuangan,
 } from "https://bukulapak.github.io/element/process.js";
 import {
   urlPOST,
@@ -12,9 +9,6 @@ import {
   urlPOSTMahasiswa,
   urlPOSTRuangan,
   AmbilResponse,
-  AmbilResponseDosen,
-  AmbilResponseMahasiswa,
-  AmbilResponseRuangan,
 } from "../config/url_post.js";
 
 function pushData() {
@@ -40,32 +34,32 @@ function pushData() {
 
 onClick("button", pushData);
 
-function pushDatadosen() {
-  let datadosen = {
-    nama: getValueDosen("nama"),
-    jabatan: getValueDosen("jabatan"),
+function pushData() {
+  let data = {
+    nama: getValue("nama"),
+    jabatan: getValue("jabatan"),
   };
-  postData(urlPOSTDosen, datadosen, AmbilResponseDosen);
+  postData(urlPOSTDosen, data, AmbilResponse);
 }
 
-onClick("button", pushDatadosen);
+onClick("btn_dosen", pushData);
 
-function pushDatamahasiswa() {
-  let datamahasiswa = {
-    nama: getValueMahasiswa("nama"),
-    phone_number: getValueMahasiswa("phone_number"),
-    jurusan: getValueMahasiswa("jurusan"),
+function pushData() {
+  let data = {
+    nama: getValue("nama"),
+    phone_number: getValue("phone_number"),
+    jurusan: getValue("jurusan"),
   };
-  postData(urlPOSTMahasiswa, datamahasiswa, AmbilResponseMahasiswa);
+  postData(urlPOSTMahasiswa, data, AmbilResponse);
 }
 
-onClick("button", pushDatamahasiswa);
+onClick("btn_mahasiswa", pushData);
 
-function pushDataruangan() {
-  let dataruangan = {
-    lokasi_ruangan: getValueRuangan("lokasi_ruangan"),
+function pushData() {
+  let data = {
+    lokasi_ruangan: getValue("lokasi_ruangan"),
   };
-  postData(urlPOSTRuangan, dataruangan, AmbilResponseRuangan);
+  postData(urlPOSTRuangan, data, AmbilResponse);
 }
 
-onClick("button", pushDataruangan);
+onClick("btn_ruangan", pushData);
