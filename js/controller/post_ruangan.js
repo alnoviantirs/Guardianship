@@ -7,7 +7,7 @@ import { urlPOST, AmbilResponse } from "../config/url_post_ruangan.js";
 
 function pushData() {
   let data = {
-    lokasi_ruangan: getValue("lokasi_ruangan"),
+    lokasi_ruangan: getValue("ruangan"),
   };
   postData(urlPOST, data, AmbilResponse);
 }

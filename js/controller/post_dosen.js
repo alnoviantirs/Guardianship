@@ -7,7 +7,7 @@ import { urlPOSTDosen, AmbilResponse } from "../config/url_post.js";
 
 function pushData() {
   let data = {
-    nama: getValue("nama"),
+    nama: getValue("namadosen"),
     jabatan: getValue("jabatan"),
   };
   postData(urlPOSTDosen, data, AmbilResponse);
