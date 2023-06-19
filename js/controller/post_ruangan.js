@@ -3,13 +3,13 @@ import {
   onClick,
   getValue,
 } from "https://bukulapak.github.io/element/process.js";
-import { urlPOST, AmbilResponse } from "../config/url_post.js";
+import { urlPOSTRuangan, AmbilResponse } from "../config/url_post.js";
 
 function pushData() {
   let data = {
     lokasi_ruangan: getValue("ruangan"),
   };
-  postData(urlPOST, data, AmbilResponse);
+  postData(urlPOSTRuangan, data, AmbilResponse);
 }
 
 onClick("button", pushData);
