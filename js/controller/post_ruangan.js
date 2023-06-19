@@ -5,11 +5,11 @@ import {
 } from "https://bukulapak.github.io/element/process.js";
 import { urlPOSTRuangan, AmbilResponse } from "../config/url_post.js";
 
-function pushData() {
+function pushDataRuangan() {
   let data = {
     lokasi_ruangan: getValue("lokasi_ruangan"),
   };
   postData(urlPOSTRuangan, data, AmbilResponse);
 }
 
-onClick("button", pushData);
+onClick("button", pushDataRuangan);
