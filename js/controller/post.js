@@ -3,7 +3,13 @@ import {
   onClick,
   getValue,
 } from "https://bukulapak.github.io/element/process.js";
-import { urlPOST, AmbilResponse } from "../config/url_post.js";
+import {
+  urlPOST,
+  urlPOSTDosen,
+  urlPOSTMahasiswa,
+  urlPOSTRuangan,
+  AmbilResponse,
+} from "../config/url_post.js";
 
 function pushData() {
   let data = {
@@ -23,23 +29,37 @@ function pushData() {
       jurusan: getValue("jurusan"),
     },
   };
+  postData(urlPOST, data, AmbilResponse);
+}
 
+onClick("button", pushData);
+
+function pushDatadosen() {
   let datadosen = {
     nama: getValue("nama"),
     jabatan: getValue("jabatan"),
   };
+  postData(urlPOSTDosen, datadosen, AmbilResponse);
+}
 
-  let dataruangan = {
-    lokasi_ruangan: getValue("lokasi_ruangan"),
-  };
+onClick("button", pushDatadosen);
 
+function pushDatamahasiswa() {
   let datamahasiswa = {
     nama: getValue("nama"),
     phone_number: getValue("phone_number"),
     jurusan: getValue("jurusan"),
   };
-
-  postData(urlPOST, data, datadosen, datamahasiswa, dataruangan, AmbilResponse);
+  postData(urlPOSTMahasiswa, datamahasiswa, AmbilResponse);
 }
 
-onClick("button", pushData);
+onClick("button", pushDatamahasiswa);
+
+function pushDataruangan() {
+  let dataruangan = {
+    lokasi_ruangan: getValue("lokasi_ruangan"),
+  };
+  postData(urlPOSTRuangan, dataruangan, AmbilResponse);
+}
+
+onClick("button", pushDataruangan);
