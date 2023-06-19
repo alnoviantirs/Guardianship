@@ -7,11 +7,11 @@ import { urlPOSTMahasiswa, AmbilResponse } from "../config/url_post.js";
 
 function pushData() {
   let data = {
-    nama: getValueMahasiswa("nama"),
-    phone_number: getValueMahasiswa("phone_number"),
-    jurusan: getValueMahasiswa("jurusan"),
+    nama: getValue("nama"),
+    phone_number: getValue("phone_number"),
+    jurusan: getValue("jurusan"),
   };
   postData(urlPOSTMahasiswa, data, AmbilResponse);
 }
 
-onClick("button", pushDatamahasiswa);
+onClick("btn_mahasiswa", pushData);

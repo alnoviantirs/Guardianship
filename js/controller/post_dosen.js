@@ -13,4 +13,4 @@ function pushData() {
   postData(urlPOSTDosen, data, AmbilResponse);
 }
 
-onClick("button", pushData);
+onClick("btn_dosen", pushData);
