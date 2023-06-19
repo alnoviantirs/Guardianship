@@ -3,13 +3,7 @@ import {
   onClick,
   getValue,
 } from "https://bukulapak.github.io/element/process.js";
-import {
-  urlPOST,
-  urlPOSTDosen,
-  urlPOSTMahasiswa,
-  urlPOSTRuangan,
-  AmbilResponse,
-} from "../config/url_post.js";
+import { urlPOST, AmbilResponse } from "../config/url_post.js";
 
 function pushData() {
   let data = {
@@ -34,32 +28,32 @@ function pushData() {
 
 onClick("button", pushData);
 
-function pushDataDosen() {
-  let data = {
-    nama: getValue("nama"),
-    jabatan: getValue("jabatan"),
-  };
-  postData(urlPOSTDosen, data, AmbilResponse);
-}
+// function pushDataDosen() {
+//   let data = {
+//     nama: getValue("nama"),
+//     jabatan: getValue("jabatan"),
+//   };
+//   postData(urlPOSTDosen, data, AmbilResponse);
+// }
 
-onClick("btn_dosen", pushDataDosen);
+// onClick("btn_dosen", pushDataDosen);
 
-function pushDataMahasiswa() {
-  let data = {
-    nama: getValue("nama"),
-    phone_number: getValue("phone_number"),
-    jurusan: getValue("jurusan"),
-  };
-  postData(urlPOSTMahasiswa, data, AmbilResponse);
-}
+// function pushDataMahasiswa() {
+//   let data = {
+//     nama: getValue("nama"),
+//     phone_number: getValue("phone_number"),
+//     jurusan: getValue("jurusan"),
+//   };
+//   postData(urlPOSTMahasiswa, data, AmbilResponse);
+// }
 
-onClick("btn_mahasiswa", pushDataMahasiswa);
+// onClick("btn_mahasiswa", pushDataMahasiswa);
 
-function pushDataRuangan() {
-  let data = {
-    lokasi_ruangan: getValue("lokasi_ruangan"),
-  };
-  postData(urlPOSTRuangan, data, AmbilResponse);
-}
+// function pushDataRuangan() {
+//   let data = {
+//     lokasi_ruangan: getValue("lokasi_ruangan"),
+//   };
+//   postData(urlPOSTRuangan, data, AmbilResponse);
+// }
 
-onClick("btn_ruangan", pushDataRuangan);
+// onClick("btn_ruangan", pushDataRuangan);

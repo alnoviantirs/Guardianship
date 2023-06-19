@@ -1,27 +1,18 @@
-// import { postData } from "https://bukulapak.github.io/api/process.js";
-// import {
-//   onClick,
-//   getValue,
-//   getValueDosen,
-//   getValueMahasiswa,
-//   getValueRuangan,
-// } from "https://bukulapak.github.io/element/process.js";
-// import {
-//   urlPOST,
-//   urlPOSTDosen,
-//   urlPOSTMahasiswa,
-//   urlPOSTRuangan,
-//   AmbilResponse,
-//   AmbilResponseDosen,
-//   AmbilResponseMahasiswa,
-//   AmbilResponseRuangan,
-// } from "../config/url_post.js";
+import { postData } from "https://bukulapak.github.io/api/process.js";
+import {
+  onClick,
+  getValue,
+  getValueDosen,
+  getValueMahasiswa,
+  getValueRuangan,
+} from "https://bukulapak.github.io/element/process.js";
+import { urlPOSTRuangan, AmbilResponse } from "../config/url_post.js";
 
-// function pushDataruangan() {
-//   let dataruangan = {
-//     lokasi_ruangan: getValueRuangan("lokasi_ruangan"),
-//   };
-//   postData(urlPOSTRuangan, dataruangan, AmbilResponseRuangan);
-// }
+function pushData() {
+  let data = {
+    lokasi_ruangan: getValueRuangan("lokasi_ruangan"),
+  };
+  postData(urlPOSTRuangan, dataruangan, AmbilResponse);
+}
 
-// onClick("button", pushDataruangan);
+onClick("button", pushData);
