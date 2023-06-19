@@ -34,7 +34,7 @@ function pushData() {
 
 onClick("button", pushData);
 
-function pushData() {
+function pushDataDosen() {
   let data = {
     nama: getValue("nama"),
     jabatan: getValue("jabatan"),
@@ -42,9 +42,9 @@ function pushData() {
   postData(urlPOSTDosen, data, AmbilResponse);
 }
 
-onClick("btn_dosen", pushData);
+onClick("btn_dosen", pushDataDosen);
 
-function pushData() {
+function pushDataMahasiswa() {
   let data = {
     nama: getValue("nama"),
     phone_number: getValue("phone_number"),
@@ -53,13 +53,13 @@ function pushData() {
   postData(urlPOSTMahasiswa, data, AmbilResponse);
 }
 
-onClick("btn_mahasiswa", pushData);
+onClick("btn_mahasiswa", pushDataMahasiswa);
 
-function pushData() {
+function pushDataRuangan() {
   let data = {
     lokasi_ruangan: getValue("lokasi_ruangan"),
   };
   postData(urlPOSTRuangan, data, AmbilResponse);
 }
 
-onClick("btn_ruangan", pushData);
+onClick("btn_ruangan", pushDataRuangan);
