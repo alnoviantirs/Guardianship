@@ -9,6 +9,9 @@ import {
   urlPOSTMahasiswa,
   urlPOSTRuangan,
   AmbilResponse,
+  AmbilResponseDosen,
+  AmbilResponseMahasiswa,
+  AmbilResponseRuangan,
 } from "../config/url_post.js";
 
 function pushData() {
@@ -39,7 +42,7 @@ function pushDatadosen() {
     nama: getValue("nama"),
     jabatan: getValue("jabatan"),
   };
-  postData(urlPOSTDosen, datadosen, AmbilResponse);
+  postData(urlPOSTDosen, datadosen, AmbilResponseDosen);
 }
 
 onClick("button", pushDatadosen);
@@ -50,7 +53,7 @@ function pushDatamahasiswa() {
     phone_number: getValue("phone_number"),
     jurusan: getValue("jurusan"),
   };
-  postData(urlPOSTMahasiswa, datamahasiswa, AmbilResponse);
+  postData(urlPOSTMahasiswa, datamahasiswa, AmbilResponseMahasiswa);
 }
 
 onClick("button", pushDatamahasiswa);
@@ -59,7 +62,7 @@ function pushDataruangan() {
   let dataruangan = {
     lokasi_ruangan: getValue("lokasi_ruangan"),
   };
-  postData(urlPOSTRuangan, dataruangan, AmbilResponse);
+  postData(urlPOSTRuangan, dataruangan, AmbilResponseRuangan);
 }
 
 onClick("button", pushDataruangan);
