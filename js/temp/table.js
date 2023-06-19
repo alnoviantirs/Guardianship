@@ -53,35 +53,35 @@ export let isiTabelDosen = `
     </th>
 </tr>
 `;
-// export let isiTabelLocation = `
-// <tr class="h-18 border-b border-coolGray-100">
-//     <th class="whitespace-nowrap px-4 bg-white text-left">
-//         <div class="flex items-center -m-2">
-//             <div class="w-auto p-2">
-//                 <p class="text-xs font-semibold text-coolGray-800">#NAMALOKASI#</p>
-//             </div>
-//         </div>
-//     </th>
-//     <th class="whitespace-nowrap px-4 bg-white text-sm font-medium text-coolGray-800 text-left">#ALAMAT#</th>
-//     <th class="whitespace-nowrap px-4 bg-white text-left">
-//     </th>
-// </tr>
-// `;
-// export let isiTabelWaktu = `
-// <tr class="h-18 border-b border-coolGray-100">
-//     <th class="whitespace-nowrap px-4 bg-white text-left">
-//         <div class="flex items-center -m-2">
-//             <div class="w-auto p-2">
-//                 <p class="text-xs font-semibold text-coolGray-800">#JAM#</p>
-//             </div>
-//         </div>
-//     </th>
-//     <th class="whitespace-nowrap px-4 bg-white text-sm font-medium text-coolGray-800 text-left">#HARI#</th>
-//     <th class="whitespace-nowrap px-4 bg-white text-sm font-medium text-coolGray-800 text-center">#TANGGAL#</th>
-//     <th class="whitespace-nowrap px-4 bg-white text-left">
-//     </th>
-// </tr>
-// `;
+export let isiTabelLocation = `
+<tr class="h-18 border-b border-coolGray-100">
+    <th class="whitespace-nowrap px-4 bg-white text-left">
+        <div class="flex items-center -m-2">
+            <div class="w-auto p-2">
+                <p class="text-xs font-semibold text-coolGray-800">#NAMALOKASI#</p>
+            </div>
+        </div>
+    </th>
+    <th class="whitespace-nowrap px-4 bg-white text-sm font-medium text-coolGray-800 text-left">#ALAMAT#</th>
+    <th class="whitespace-nowrap px-4 bg-white text-left">
+    </th>
+</tr>
+`;
+export let isiTabelWaktu = `
+<tr class="h-18 border-b border-coolGray-100">
+    <th class="whitespace-nowrap px-4 bg-white text-left">
+        <div class="flex items-center -m-2">
+            <div class="w-auto p-2">
+                <p class="text-xs font-semibold text-coolGray-800">#JAM#</p>
+            </div>
+        </div>
+    </th>
+    <th class="whitespace-nowrap px-4 bg-white text-sm font-medium text-coolGray-800 text-left">#HARI#</th>
+    <th class="whitespace-nowrap px-4 bg-white text-sm font-medium text-coolGray-800 text-center">#TANGGAL#</th>
+    <th class="whitespace-nowrap px-4 bg-white text-left">
+    </th>
+</tr>
+`;
 export let isiTabelRuangan = `
 <tr class="h-18 border-b border-coolGray-100">
     <th class="whitespace-nowrap px-4 bg-white text-left">
