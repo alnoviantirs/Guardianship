@@ -3,7 +3,7 @@ import {
   onClick,
   getValue,
 } from "https://bukulapak.github.io/element/process.js";
-import { urlPUTDosen, AmbilResponse } from "../config/url_put.js";
+import { urlPUTDosen, AmbilResponse } from "../config/url_put _dosen.js";
 
 function pushData() {
   let data = {

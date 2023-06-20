@@ -3,7 +3,7 @@ import {
   onClick,
   getValue,
 } from "https://bukulapak.github.io/element/process.js";
-import { urlPUTMahasiswa, AmbilResponse } from "../config/url_put.js";
+import { urlPUTMahasiswa, AmbilResponse } from "../config/url_put_mahasiswa.js";
 
 function pushData() {
   let data = {
