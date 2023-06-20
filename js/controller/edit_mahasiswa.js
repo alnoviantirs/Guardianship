@@ -1,14 +1,8 @@
-export function isiData(results) {
+export function isiDataMahasiswa(results) {
   const inputMapping = [
     { id: "nama", path: "biodata.nama" },
     { id: "phone_number", path: "biodata.phone_number" },
     { id: "jurusan", path: "biodata.jurusan" },
-    { id: "namadosen", path: "walidosen.nama" },
-    { id: "jabatan", path: "walidosen.jabatan" },
-    { id: "tanggal", path: "time.tanggal" },
-    { id: "hari", path: "time.hari" },
-    { id: "jam", path: "time.jam" },
-    { id: "lokasi", path: "lokasi" },
   ];
 
   inputMapping.forEach(({ id, path, index, property }) => {
