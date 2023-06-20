@@ -3,14 +3,14 @@ import {
   onClick,
   getValue,
 } from "https://bukulapak.github.io/element/process.js";
-import { urlPUTDosen, AmbilResponse } from "../config/url_put _dosen.js";
+import { urlPUTDosen, AmbilResponseDosen } from "../config/url_put _dosen.js";
 
 function pushData() {
   let data = {
     nama: getValue("namadosen"),
     jabatan: getValue("jabatan"),
   };
-  putData(urlPUTDosen, data, AmbilResponse);
+  putData(urlPUTDosen, data, AmbilResponseDosen);
 }
 
 onClick("button", pushData);
