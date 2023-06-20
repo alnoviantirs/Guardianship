@@ -1,8 +1,8 @@
 export function isiData(results) {
   const inputMapping = [
-    { id: "nama", path: "biodata.nama" },
-    { id: "phone_number", path: "biodata.phone_number" },
-    { id: "jurusan", path: "biodata.jurusan" },
+    { id: "nama", path: "nama" },
+    { id: "phone_number", path: "phone_number" },
+    { id: "jurusan", path: "jurusan" },
   ];
 
   inputMapping.forEach(({ id, path, index, property }) => {
