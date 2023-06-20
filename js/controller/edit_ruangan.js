@@ -1,4 +1,4 @@
-export function isiData(results) {
+export function isiDataRuangan(results) {
   const inputMapping = [{ id: "ruangan", path: "lokasi_ruangan" }];
 
   inputMapping.forEach(({ id, path, index, property }) => {

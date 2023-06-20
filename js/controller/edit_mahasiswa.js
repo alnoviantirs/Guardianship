@@ -1,4 +1,4 @@
-export function isiData(results) {
+export function isiDataMahasiswa(results) {
   const inputMapping = [
     { id: "nama", path: "biodata.nama" },
     { id: "phone_number", path: "biodata.phone_number" },

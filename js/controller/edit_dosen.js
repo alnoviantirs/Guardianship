@@ -1,4 +1,4 @@
-export function isiData(results) {
+export function isiDataDosen(results) {
   const inputMapping = [
     { id: "namadosen", path: "walidosen.nama" },
     { id: "jabatan", path: "walidosen.jabatan" },
