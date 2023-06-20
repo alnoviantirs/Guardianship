@@ -18,6 +18,43 @@ export function isiData(results) {
   });
 }
 
+export function isiDataDosen(results) {
+  const inputMapping = [
+    { id: "namadosen", path: "walidosen.nama" },
+    { id: "jabatan", path: "walidosen.jabatan" },
+  ];
+
+  inputMapping.forEach(({ id, path, index, property }) => {
+    const inputElement = document.getElementById(id);
+    const value = getNestedValue(results, path, index, property);
+    inputElement.value = value;
+  });
+}
+
+export function isiDataMahasiswa(results) {
+  const inputMapping = [
+    { id: "nama", path: "biodata.nama" },
+    { id: "phone_number", path: "biodata.phone_number" },
+    { id: "jurusan", path: "biodata.jurusan" },
+  ];
+
+  inputMapping.forEach(({ id, path, index, property }) => {
+    const inputElement = document.getElementById(id);
+    const value = getNestedValue(results, path, index, property);
+    inputElement.value = value;
+  });
+}
+
+export function isiDataRuangan(results) {
+  const inputMapping = [{ id: "lokasi_ruangan", path: "lokasi_ruangan" }];
+
+  inputMapping.forEach(({ id, path, index, property }) => {
+    const inputElement = document.getElementById(id);
+    const value = getNestedValue(results, path, index, property);
+    inputElement.value = value;
+  });
+}
+
 function getNestedValue(obj, path, index, property) {
   const value = path
     .split(".")

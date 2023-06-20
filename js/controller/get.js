@@ -62,6 +62,8 @@ function isiRowMahasiswa(value) {
     .replace("#NAMA#", value.nama)
     .replace("#NOHP#", value.phone_number)
     .replace("#JURUSAN#", value.jurusan)
+    .replace("#IDEDIT#", value._id)
+    .replace("#IDHAPUS#", value._id)
     .replace("#WARNA#", getRandomColor())
     .replace(/#WARNALOGO#/g, getRandomColorName());
   addInner("iniTabelMahasiswa", content);
@@ -70,10 +72,22 @@ function isiRowDosen(value) {
   let content = isiTabelDosen
     .replace("#NAMA#", value.nama)
     .replace("#JABATAN#", value.jabatan)
+    .replace("#IDEDIT#", value._id)
+    .replace("#IDHAPUS#", value._id)
     .replace("#WARNA#", getRandomColor())
     .replace(/#WARNALOGO#/g, getRandomColorName());
   addInner("iniTabelDosen", content);
 }
+function isiRowRuangan(value) {
+  let content = isiTabelRuangan
+    .replace("#LOKASIRUANGAN#", value.lokasi_ruangan)
+    .replace("#IDEDIT#", value._id)
+    .replace("#IDHAPUS#", value._id)
+    .replace("#WARNA#", getRandomColor())
+    .replace(/#WARNALOGO#/g, getRandomColorName());
+  addInner("iniTabelRuangan", content);
+}
+
 function isiRowLocation(value) {
   let content = isiTabelLocation
     .replace("#NAMALOKASI#", value.nama_lokasi)
@@ -90,11 +104,4 @@ function isiRowWaktu(value) {
     .replace("#WARNA#", getRandomColor())
     .replace(/#WARNALOGO#/g, getRandomColorName());
   addInner("iniTabelWaktu", content);
-}
-function isiRowRuangan(value) {
-  let content = isiTabelRuangan
-    .replace("#LOKASIRUANGAN#", value.lokasi_ruangan)
-    .replace("#WARNA#", getRandomColor())
-    .replace(/#WARNALOGO#/g, getRandomColorName());
-  addInner("iniTabelRuangan", content);
 }
