@@ -3,7 +3,10 @@ import {
   onClick,
   getValue,
 } from "https://bukulapak.github.io/element/process.js";
-import { urlPOSTMahasiswa, AmbilResponse } from "../config/url_post.js";
+import {
+  urlPOSTMahasiswa,
+  AmbilResponseMahasiswa,
+} from "../config/url_post.js";
 
 function pushData() {
   let data = {
@@ -11,7 +14,7 @@ function pushData() {
     phone_number: getValue("phone_number"),
     jurusan: getValue("jurusan"),
   };
-  postData(urlPOSTMahasiswa, data, AmbilResponse);
+  postData(urlPOSTMahasiswa, data, AmbilResponseMahasiswa);
 }
 
 onClick("button", pushData);
