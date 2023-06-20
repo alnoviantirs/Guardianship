@@ -1,8 +1,8 @@
 function deleteData(IDHAPUS) {
-  var perwalianId,
-    dosenId,
-    mahasiswaId,
-    ruanganId = IDHAPUS;
+  var perwalianId = IDHAPUS;
+  var dosenId = IDHAPUS;
+  var mahasiswaId = IDHAPUS;
+  var ruanganId = IDHAPUS;
   var target_url = "https://alnovianti.herokuapp.com/del/" + perwalianId;
   var target_url = "https://alnovianti.herokuapp.com/deldosen/" + dosenId;
   var target_url =
