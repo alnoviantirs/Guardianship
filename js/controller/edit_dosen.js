@@ -12,16 +12,10 @@ export function isiData(results) {
 }
 
 function getNestedValue(obj, path, index, property) {
-  const value = path
-    .split(".")
-    .reduce((value, key) => (value && value[key] ? value[key] : ""), obj);
+  const value = path.split(".").reduce((value, key) => (value && value[key] ? value[key] : ""), obj);
   // console.log(`Value at path ${path}:`, value);
 
-  if (
-    Array.isArray(value) &&
-    value.length > index &&
-    value[index].hasOwnProperty(property)
-  ) {
+  if (Array.isArray(value) && value.length > index && value[index].hasOwnProperty(property)) {
     return value[index][property];
   }
 
