@@ -467,12 +467,22 @@
                               </p>
                             </div>
                             <div class="w-full md:flex-1 p-3">
-                              <input
-                                id="nama"
-                                class="w-full px-4 py-2.5 text-base text-coolGray-900 font-normal outline-none focus:border-green-500 border border-coolGray-200 rounded-lg shadow-input"
-                                type="text"
-                                placeholder="Nama"
-                              />
+                              
+                                <input
+                                  id="nama"
+                                  class="w-full px-4 py-2.5 text-base text-coolGray-900 font-normal outline-none focus:border-green-500 border border-coolGray-200 rounded-lg shadow-input"
+                                  type="text"
+                                  placeholder="Nohp" required
+                                />
+
+                              <!-- <select id="namadosen"
+                          class="w-full px-4 py-2.5 text-base text-coolGray-900 font-normal outline-none focus:border-green-500 border border-coolGray-200 rounded-lg shadow-input" required
+                        >
+                          <option>$1,000</option>
+                          <option>$5,000</option>
+                          <option>$10,000</option>
+                          <option>$25,000</option>
+                        </select> -->
                             </div>
                           </div>
                         </div>
@@ -490,7 +500,7 @@
                                 id="phone_number"
                                 class="w-full px-4 py-2.5 text-base text-coolGray-900 font-normal outline-none focus:border-green-500 border border-coolGray-200 rounded-lg shadow-input"
                                 type="text"
-                                placeholder="Nohp"
+                                placeholder="Nohp" required
                               />
                             </div>
                           </div>
@@ -510,7 +520,7 @@
                                 id="jurusan"
                                 class="w-full px-4 py-2.5 text-base text-coolGray-900 font-normal outline-none focus:border-green-500 border border-coolGray-200 rounded-lg shadow-input"
                                 type="text"
-                                placeholder="Jurusan"
+                                placeholder="Jurusan" required
                               />
                             </div>
                           </div>
@@ -530,7 +540,7 @@
                                 id="namadosen"
                                 class="w-full px-4 py-2.5 text-base text-coolGray-900 font-normal outline-none focus:border-green-500 border border-coolGray-200 rounded-lg shadow-input"
                                 type="text"
-                                placeholder="Nama"
+                                placeholder="Nama" required
                               />
                             </div>
                           </div>
@@ -550,7 +560,7 @@
                                 id="jabatan"
                                 class="w-full px-4 py-2.5 text-base text-coolGray-900 font-normal outline-none focus:border-green-500 border border-coolGray-200 rounded-lg shadow-input"
                                 type="text"
-                                placeholder="Jabatan"
+                                placeholder="Jabatan" required
                               />
                             </div>
                           </div>
@@ -570,7 +580,7 @@
                                 id="tanggal"
                                 class="w-full px-4 py-2.5 text-base text-coolGray-900 font-normal outline-none focus:border-green-500 border border-coolGray-200 rounded-lg shadow-input"
                                 type="text"
-                                placeholder="Tanggal"
+                                placeholder="Tanggal" required
                               />
                             </div>
                           </div>
@@ -590,7 +600,7 @@
                                 id="hari"
                                 class="w-full px-4 py-2.5 text-base text-coolGray-900 font-normal outline-none focus:border-green-500 border border-coolGray-200 rounded-lg shadow-input"
                                 type="text"
-                                placeholder="Hari"
+                                placeholder="Hari" required
                               />
                             </div>
                           </div>
@@ -610,7 +620,7 @@
                                 id="jam"
                                 class="w-full px-4 py-2.5 text-base text-coolGray-900 font-normal outline-none focus:border-green-500 border border-coolGray-200 rounded-lg shadow-input"
                                 type="text"
-                                placeholder="Jam"
+                                placeholder="Jam" required
                               />
                             </div>
                           </div>
@@ -636,18 +646,6 @@
                           </div>
                         </div>
                       </div>
-  
-                      <!-- <div class="pt-6">
-                <div class="w-full md:w-9/12">
-                  <div class="flex flex-wrap -m-3">
-                    <div class="w-full md:w-1/3 p-3">
-                      <p class="text-sm text-coolGray-800 font-semibold">Masalah yang dialami</p>
-                      <p class="text-xs text-coolGray-500 font-medium">Lorem ipsum dolor sit amet</p>
-                    </div>
-                    <div class="w-full md:flex-1 p-3"><textarea class="block w-full h-64 p-6 text-base text-coolGray-900 font-normal outline-none focus:border-green-500 border border-coolGray-200 rounded-lg shadow-input resize-none"></textarea></div>
-                  </div>
-                </div>
-              </div> -->
                     </div>
                   </div>
                 
@@ -693,5 +691,6 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="../js/charts-demo.js"></script>
+    <script type="module" src="../js/controller/put_dosen.js"></script>
   </body>
 </html>
