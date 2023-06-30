@@ -22,6 +22,7 @@ function pushData() {
       phone_number: getValue("phone_number"),
       jurusan: getValue("jurusan"),
     },
+    lokasi_ruangan: getValue("ruangan"),
   };
   putData(urlPUT, data, AmbilResponse);
 }
