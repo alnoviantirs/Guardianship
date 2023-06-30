@@ -14,21 +14,6 @@ fetch("https://alnovianti.herokuapp.com/allmahasiswa")
   })
   .catch((error) => console.log(error));
 
-  // Fetch data jurusan from the API for Pilih Jurusan
-fetch("https://alnovianti.herokuapp.com/allmahasiswa")
-.then((response) => response.json())
-.then((data) => {
-  const jurusanDropdown = document.getElementById("jurusan");
-
-  // Generate options for each data item
-  data.forEach((item) => {
-    const option = document.createElement("option");
-    option.value = item.jurusan;
-    option.text = item.jurusan;
-    jurusanDropdown.appendChild(option);
-  });
-})
-.catch((error) => console.log(error));
 
 // Fetch data dosen from the API for Pilih Nama Wali Dosen
 fetch("https://alnovianti.herokuapp.com/alldosen")
