@@ -35,7 +35,7 @@ fetch("https://alnovianti.herokuapp.com/alldosen")
 fetch("https://alnovianti.herokuapp.com/allruangan")
 .then((response) => response.json())
 .then((data) => {
-  const ruanganDropdown = document.getElementById("ruangan");
+  const ruanganDropdown = document.getElementById("lokasi_ruangan");
 
   // Generate options for each data item
   data.forEach((item) => {

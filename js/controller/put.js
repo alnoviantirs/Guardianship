@@ -14,7 +14,7 @@ function pushData() {
     },
     lokasi: getValue("lokasi"),
     walidosen: {
-      nama: getValue("nama"),
+      nama: getValue("namadosen"),
       jabatan: getValue("jabatan"),
     },
     biodata: {
@@ -22,6 +22,7 @@ function pushData() {
       phone_number: getValue("phone_number"),
       jurusan: getValue("jurusan"),
     },
+    lokasi_ruangan: getValue("lokasi_ruangan"),
   };
   putData(urlPUT, data, AmbilResponse);
 }

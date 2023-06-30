@@ -1,5 +1,5 @@
 export function isiData(results) {
-  const inputMapping = [{ id: "ruangan", path: "lokasi_ruangan" }];
+  const inputMapping = [{ id: "lokasi_ruangan", path: "lokasi_ruangan" }];
   
   inputMapping.forEach(({ id, path, index, property }) => {
     const inputElement = document.getElementById(id);

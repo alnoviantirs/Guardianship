@@ -7,7 +7,7 @@ import { urlPUTRuangan, AmbilResponseRuangan } from "../config/url_put_ruangan.j
 
 function pushData() {
   let data = {
-    lokasi_ruangan: getValue("ruangan"),
+    lokasi_ruangan: getValue("lokasi_ruangan"),
   };
   putData(urlPUTRuangan, data, AmbilResponseRuangan);
 }
