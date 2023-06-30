@@ -8,8 +8,12 @@ export function isiData(results) {
     { id: "tanggal", path: "time.tanggal" },
     { id: "hari", path: "time.hari" },
     { id: "jam", path: "time.jam" },
+<<<<<<< HEAD
     { id: "lokasi", path: "lokasi" },
     { id: "lokasi_ruangan", path: "lokasi_ruangan" },
+=======
+    { id: "ruangan", path: "lokasi_ruangan" },
+>>>>>>> 1cfb6428aaafaa07e86bd76c884bd006a65b4052
   ];
 
   inputMapping.forEach(({ id, path, index, property }) => {
