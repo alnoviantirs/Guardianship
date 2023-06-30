@@ -53,6 +53,7 @@ function isiRow(value) {
     .replace("#HARI#", value.time.hari)
     .replace("#JAM#", value.time.jam)
     .replace("#LOKASI#", value.lokasi)
+    .replace("#LOKASIRUANGAN#", value.lokasi_ruangan)
     .replace("#IDEDIT#", value._id)
     .replace("#IDHAPUS#", value._id)
     .replace("#WARNA#", getRandomColor())
