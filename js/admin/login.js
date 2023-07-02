@@ -1,9 +1,7 @@
-function loginAdmin(event) {
-  event.preventDefault();
-
+function loginAdmin() {
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
-  var target_url = "https://alnoviantirs.herokuapp.com/loginadmin";
+  // var target_url = ;
 
   var data = {
     username: username,
@@ -22,15 +20,27 @@ function loginAdmin(event) {
     redirect: "follow",
   };
 
-  fetch(target_url, requestOptions)
-    .then((response) => response.json())
-    .then((result) => {
-      alert(result.message);
-      console.log(result.status);
-      if (result.status === 200) {
-        window.location.href = "index.html";
+  fetch("https://alnovianti.herokuapp.com/loginadmin", requestOptions)
+    .then((response) => {
+      if (response.ok) {
+        return response
+          .json()
+          .then((result) => (window.location.href = "../index.html"));
+      } else {
+        return response
+          .json()
+          .then((result) => alert("Username/Password salah"));
       }
     })
     .catch((error) => console.log("Error:", error));
 }
-document.getElementById("loginForm").addEventListener("submit", loginAdmin);
+document.getElementById("submit").addEventListener("click", loginAdmin);
+
+// response.json())
+// .then((result) => {
+//   alert(result.message);
+//   console.log(result.status);
+//   if (result.status === 200) {
+//     window.location.href = "index.html";
+//   }
+// })

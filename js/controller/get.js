@@ -30,7 +30,6 @@ export function isiTabel_Waktu(results) {
 //   results.forEach(isiRowRuangan);
 // }
 
-
 //Perwalian
 var MyvarPerwalian = {};
 export function isiTablePresensi(results) {
@@ -52,11 +51,10 @@ function isiRow(value) {
     .replace("#TANGGAL#", value.time.tanggal)
     .replace("#HARI#", value.time.hari)
     .replace("#JAM#", value.time.jam)
-    .replace("#LOKASI#", value.lokasi)
-    .replace("#LOKASIRUANGAN#", value.lokasi_ruangan)
+    .replace("#LOKASIRUANGAN#", value.ruangan.lokasi_ruangan)
     .replace("#IDEDIT#", value._id)
     .replace("#IDHAPUS#", value._id)
-    .replace("#WARNA#", getRandomColor())
+    .replace("#WARNA#", getRandomColor());
   addInner("iniTabel", content);
 }
 
@@ -71,14 +69,14 @@ export function isiTable_Mahasiswa(results) {
 
 function isiRowMahasiswa(value) {
   document.getElementById("jmlmahasiswa").innerHTML =
-  "" + MyvarMahasiswa.length + " Data";
+    "" + MyvarMahasiswa.length + " Data";
   let content = isiTabelMahasiswa
     .replace("#NAMA#", value.nama)
     .replace("#NOHP#", value.phone_number)
     .replace("#JURUSAN#", value.jurusan)
     .replace("#IDEDIT#", value._id)
     .replace("#IDHAPUS#", value._id)
-    .replace("#WARNA#", getRandomColor())
+    .replace("#WARNA#", getRandomColor());
   addInner("iniTabelMahasiswa", content);
 }
 
@@ -93,13 +91,13 @@ export function isiTabel_Dosen(results) {
 
 function isiRowDosen(value) {
   document.getElementById("jmldosen").innerHTML =
-  "" + MyvarDosen.length + " Data";
+    "" + MyvarDosen.length + " Data";
   let content = isiTabelDosen
     .replace("#NAMA#", value.nama)
     .replace("#JABATAN#", value.jabatan)
     .replace("#IDEDIT#", value._id)
     .replace("#IDHAPUS#", value._id)
-    .replace("#WARNA#", getRandomColor())
+    .replace("#WARNA#", getRandomColor());
   addInner("iniTabelDosen", content);
 }
 
@@ -114,12 +112,12 @@ export function isiTabel_Ruangan(results) {
 
 function isiRowRuangan(value) {
   document.getElementById("jmlruangan").innerHTML =
-  "" + MyvarRuangan.length + " Data";
+    "" + MyvarRuangan.length + " Data";
   let content = isiTabelRuangan
     .replace("#LOKASIRUANGAN#", value.lokasi_ruangan)
     .replace("#IDEDIT#", value._id)
     .replace("#IDHAPUS#", value._id)
-    .replace("#WARNA#", getRandomColor())
+    .replace("#WARNA#", getRandomColor());
   addInner("iniTabelRuangan", content);
 }
 
@@ -127,7 +125,7 @@ function isiRowLocation(value) {
   let content = isiTabelLocation
     .replace("#NAMALOKASI#", value.nama_lokasi)
     .replace("#ALAMAT#", value.alamat)
-    .replace("#WARNA#", getRandomColor())
+    .replace("#WARNA#", getRandomColor());
   addInner("iniTabelLocation", content);
 }
 function isiRowWaktu(value) {
@@ -135,6 +133,6 @@ function isiRowWaktu(value) {
     .replace("#JAM#", value.jam)
     .replace("#HARI#", value.hari)
     .replace("#TANGGAL#", value.tanggal)
-    .replace("#WARNA#", getRandomColor())
+    .replace("#WARNA#", getRandomColor());
   addInner("iniTabelWaktu", content);
 }
