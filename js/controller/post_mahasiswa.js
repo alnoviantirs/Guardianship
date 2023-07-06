@@ -8,11 +8,26 @@ import {
   AmbilResponseMahasiswa,
 } from "../config/url_post.js";
 
+// Function to show SweetAlert error message
+function showErrorAlert(message) {
+  Swal.fire("Error", message, "error");
+}
+
 function pushData() {
+  let nama = getValue("nama");
+  let phone_number = getValue("phone_number");
+  let jurusan = getValue("jurusan");
+
+  // Validate input values
+  if (!nama || !phone_number || !jurusan) {
+    showErrorAlert("Input fields cannot be empty.");
+    return;
+  }
+
   let data = {
-    nama: getValue("nama"),
-    phone_number: getValue("phone_number"),
-    jurusan: getValue("jurusan"),
+    nama: nama,
+    phone_number: phone_number,
+    jurusan: jurusan,
   };
   postData(urlPOSTMahasiswa, data, AmbilResponseMahasiswa);
 }

@@ -605,10 +605,18 @@
                       <span class="text-gray-700 dark:text-gray-400">Hari</span>
                     </div>
                     <div class="w-full md:flex-1 p-3">
-                      <input
-                        id="hari"
-                        class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                      />
+                      <select
+                      id="hari"
+                      class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                    >
+                      <option selected disabled>Pilih Hari</option>
+                      <option>Senin</option>
+                      <option>Selasa</option>
+                      <option>Rabu</option>
+                      <option>Kamis</option>
+                      <option>Jumat</option>
+                      <option>Sabtu</option>
+                    </select>
                     </div>
                   </div>
                 </div>
@@ -625,6 +633,7 @@
                     <div class="w-full md:flex-1 p-3">
                       <input
                         id="tanggal"
+                        type="date"
                         class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
                       />
                     </div>

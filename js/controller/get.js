@@ -1,8 +1,5 @@
 import { addInner } from "https://bukulapak.github.io/element/process.js";
-import {
-  getRandomColor,
-  getRandomColorName,
-} from "https://bukulapak.github.io/image/process.js";
+import { getRandomColor } from "https://bukulapak.github.io/image/process.js";
 import {
   isiTabel,
   isiTabelMahasiswa,
@@ -52,6 +49,7 @@ function isiRow(value) {
     .replace("#HARI#", value.time.hari)
     .replace("#JAM#", value.time.jam)
     .replace("#LOKASIRUANGAN#", value.ruangan.lokasi_ruangan)
+    .replace("#IDDETAIL#", value._id)
     .replace("#IDEDIT#", value._id)
     .replace("#IDHAPUS#", value._id)
     .replace("#WARNA#", getRandomColor());

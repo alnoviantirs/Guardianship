@@ -5,6 +5,11 @@ import {
 } from "https://bukulapak.github.io/element/process.js";
 import { urlPOST, AmbilResponse } from "../config/url_post.js";
 
+// Function to show SweetAlert error message
+function showErrorAlert(message) {
+  Swal.fire("Error", message, "error");
+}
+
 async function getDataMahasiswa(mahasiswaId) {
   // Fetch major data based on the ID (replace with your API endpoint)
   const response = await fetch(
@@ -42,9 +47,28 @@ async function getDataRuangan(ruanganId) {
 }
 
 function pushData() {
+  // Get input values
   let mahasiswaId = getValue("nama");
   let dosenId = getValue("namadosen");
   let ruanganId = getValue("lokasi_ruangan");
+  let tanggal = getValue("tanggal");
+
+  // Validate input values
+  if (
+    !mahasiswaId ||
+    mahasiswaId == "Pilih Nama Mahasiswa" ||
+    !dosenId ||
+    dosenId == "Pilih Nama Wali Dosen" ||
+    !ruanganId ||
+    ruanganId == "Pilih Ruangan"
+  ) {
+    showErrorAlert("Input fields cannot be empty.");
+    return;
+  }
+
+  // Convert tanggal to tanggal-bulan-tahun format
+  let formattedTanggal = formatDate(tanggal);
+
   Promise.all([
     getDataMahasiswa(mahasiswaId),
     getDataDosen(dosenId),
@@ -54,7 +78,7 @@ function pushData() {
       time: {
         jam: getValue("jam"),
         hari: getValue("hari"),
-        tanggal: getValue("tanggal"),
+        tanggal: formattedTanggal, // Use the formatted tanggal
       },
       walidosen: {
         _id: dosenId,
@@ -76,34 +100,12 @@ function pushData() {
   });
 }
 
+function formatDate(dateString) {
+  const date = new Date(dateString);
+  const day = String(date.getDate()).padStart(2, "0");
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const year = date.getFullYear();
+  return `${day}-${month}-${year}`;
+}
+
 onClick("button", pushData);
-
-// function pushDataDosen() {
-//   let data = {
-//     nama: getValue("nama"),
-//     jabatan: getValue("jabatan"),
-//   };
-//   postData(urlPOSTDosen, data, AmbilResponse);
-// }
-
-// onClick("btn_dosen", pushDataDosen);
-
-// function pushDataMahasiswa() {
-//   let data = {
-//     nama: getValue("nama"),
-//     phone_number: getValue("phone_number"),
-//     jurusan: getValue("jurusan"),
-//   };
-//   postData(urlPOSTMahasiswa, data, AmbilResponse);
-// }
-
-// onClick("btn_mahasiswa", pushDataMahasiswa);
-
-// function pushDataRuangan() {
-//   let data = {
-//     lokasi_ruangan: getValue("lokasi_ruangan"),
-//   };
-//   postData(urlPOSTRuangan, data, AmbilResponse);
-// }
-
-// onClick("btn_ruangan", pushDataRuangan);

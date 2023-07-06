@@ -18,8 +18,10 @@
     <script src="../js/main.js"></script>
     <script type="module" src="../js/controller/post.js"></script>
     <script type="module" src="../js/fetch_insert.js"></script>
-    <!-- <script type="module" src="../js/fetch.js"></script> -->
+      <!-- ... kode HTML lainnya ... -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
   </head>
+    <!-- <script type="module" src="../js/fetch.js"></script> -->
   <body>
     <div
       class="flex h-screen bg-gray-50 dark:bg-gray-900"
@@ -482,7 +484,7 @@
                         class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
                         required
                       >
-                        <option value="">Pilih Nama Mahasiswa</option>
+                        <option selected disabled>Pilih Nama Mahasiswa</option>
                       </select>
                     </div>
                   </div>
@@ -555,7 +557,7 @@
                         id="namadosen"
                         class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
                       >
-                        <option value="">Pilih Nama Wali Dosen</option>
+                        <option selected disabled>Pilih Nama Wali Dosen</option>
                       </select>
                     </div>
                   </div>
@@ -606,10 +608,18 @@
                       <span class="text-gray-700 dark:text-gray-400">Hari</span>
                     </div>
                     <div class="w-full md:flex-1 p-3">
-                      <input
-                        id="hari"
-                        class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                      />
+                      <select
+                      id="hari"
+                      class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                    >
+                      <option selected disabled>Pilih Hari</option>
+                      <option>Senin</option>
+                      <option>Selasa</option>
+                      <option>Rabu</option>
+                      <option>Kamis</option>
+                      <option>Jumat</option>
+                      <option>Sabtu</option>
+                    </select>
                     </div>
                   </div>
                 </div>
@@ -626,6 +636,7 @@
                     <div class="w-full md:flex-1 p-3">
                       <input
                         id="tanggal"
+                        type="date"
                         class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
                       />
                     </div>
@@ -642,6 +653,7 @@
                     <div class="w-full md:flex-1 p-3">
                       <input
                         id="jam"
+                        type="time"
                         class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
                       />
                     </div>
@@ -661,7 +673,7 @@
                     <select id="lokasi_ruangan"
                       class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
                     >
-                    <option value="">Pilih Ruangan</option>
+                    <option selected disabled>Pilih Ruangan</option>
                     </select>
                 </div>
               </div>
@@ -674,5 +686,6 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="../js/charts-demo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
   </body>
 </html>
