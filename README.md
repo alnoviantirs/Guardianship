@@ -29,6 +29,7 @@ Ikuti langkah-langkah berikut untuk menginstal dan menjalankan aplikasi Guardian
    ```
 
 2. **Masuk ke Direktori Proyek**
+
    git clone folder backend 'https://github.com/alnoviantirs/perwalian.git'
 
    ```bash
